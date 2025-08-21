@@ -1,0 +1,84 @@
+# --- Python 기본 산출물 ---
+__pycache__/
+*.py[cod]
+*.so
+
+# 가상환경
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+__pypackages__/
+
+# 패키징/배포 산출물
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+.wheels/
+
+# 테스트 & 정적 분석/커버리지
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# 노트북 체크포인트
+**/.ipynb_checkpoints/
+
+# 로그 & 캐시 & 스왑
+*.log
+logs/
+.cache/
+*~
+*.swp
+*.swo
+core
+
+# --- Flask ---
+# instance 설정은 로컬 보관, 형식만 레포에 남김
+instance/*
+!instance/.gitkeep
+
+# 개발용 SQLite 등 로컬 DB
+*.db
+*.sqlite
+*.sqlite3
+
+# 환경변수/비밀키 (예시 파일만 추적)
+.env
+.env.*
+.flaskenv
+!.env.example
+
+# --- VSCode (팀 합의: 레포에서 무시 권장) ---
+.vscode/
+# 만약 팀에서 추천 확장/설정을 공유하고 싶다면 위 줄 대신 아래 3줄을 사용
+# .vscode/*
+# !.vscode/extensions.json
+# !.vscode/settings.json
+
+# --- 런타임 임시 ---
+tmp/
+run/
+*.pid
+*.lock
+
+# --- (선택) 데이터/아티팩트 — 필요 시 주석 해제 ---
+# data/
+# !data/.gitkeep
+# artifacts/
+# checkpoints/
+# wandb/
+# mlruns/
+
+/config.py
+!config_example.py
