@@ -41,7 +41,6 @@ logs/
 *~
 *.swp
 *.swo
-core
 
 # --- Flask ---
 # instance 설정은 로컬 보관, 형식만 레포에 남김
